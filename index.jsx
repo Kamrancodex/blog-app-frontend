@@ -2,22 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Layout from "./components/Layout.jsx";
-import Home from "./pages/Home.jsx";
-import ErrorPage from "./pages/ErrorPage.jsx";
-import PostDetail from "./pages/PostDetail.jsx";
-import LoginPage from "./pages/LoginPage.jsx";
-import UserProfile from "./pages/UserProfile.jsx";
-import Authors from "./pages/Authors.jsx";
-import CreatePost from "./pages/CreatePost.jsx";
-import EditPost from "./pages/EditPost.jsx";
-import LogoutPage from "./pages/LogoutPage.jsx";
-import CategoryPosts from "./pages/CategoryPosts.jsx";
-import AuthorPosts from "./pages/AuthorPosts.jsx";
-import Register from "./pages/Register.jsx";
-import Dashboard from "./pages/Dashboard.jsx";
-import DeletePost from "./pages/DeletePost.jsx";
-import UserProvider from "./context/userContext.jsx";
+import Layout from "./src/components/Layout.jsx";
+import Home from "./src/pages/Home.jsx";
+import ErrorPage from "./src/pages/ErrorPage.jsx";
+import PostDetail from "./src/pages/PostDetail.jsx";
+import LoginPage from "./src/pages/LoginPage.jsx";
+import UserProfile from "./src/pages/UserProfile.jsx";
+import Authors from "./src/pages/Authors.jsx";
+import CreatePost from "./src/pages/CreatePost.jsx";
+import EditPost from "./src/pages/EditPost.jsx";
+import LogoutPage from "./src/pages/LogoutPage.jsx";
+import CategoryPosts from "./src/pages/CategoryPosts.jsx";
+import AuthorPosts from "./src/pages/AuthorPosts.jsx";
+import Register from "./src/pages/Register.jsx";
+import Dashboard from "./src/pages/Dashboard.jsx";
+import DeletePost from "./src/pages/DeletePost.jsx";
+import UserProvider from "./src/context/userContext.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
