@@ -13,7 +13,7 @@ function AuthorPosts() {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/posts/users/" + id
+          "https://blog-app-backend-d194.onrender.com/api/posts/users/" + id
         );
 
         setPosts(response?.data);

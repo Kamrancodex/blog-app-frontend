@@ -20,7 +20,7 @@ function LoginPage() {
     setError("");
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/users/login",
+        "https://blog-app-backend-d194.onrender.com/api/users/login",
         userData
       );
       const user = await response.data;

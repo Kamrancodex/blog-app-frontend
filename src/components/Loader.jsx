@@ -2,11 +2,11 @@ import React from "react";
 import LoadingGif from "../images/LoadingGif.gif";
 
 function Loader() {
-  return;
+  return(
   <div className="loader">
     <div className="loader_image">
       <img src={LoadingGif} alt="" />
     </div>
-  </div>;
+  </div>)
 }
 export default Loader;

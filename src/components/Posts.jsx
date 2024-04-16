@@ -10,7 +10,9 @@ function Posts() {
     const fetchPosts = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get("http://localhost:3000/api/posts");
+        const response = await axios.get(
+          "https://blog-app-backend-d194.onrender.com/api/posts"
+        );
 
         setPosts(response?.data);
       } catch (err) {

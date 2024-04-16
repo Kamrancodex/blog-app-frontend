@@ -19,7 +19,7 @@ function PostDetail() {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/posts/" + id
+          "https://blog-app-backend-d194.onrender.com/api/posts/" + id
         );
         setPost(response.data);
       } catch (error) {
@@ -57,7 +57,10 @@ function PostDetail() {
           <h1>{post.title}</h1>
           <div className="post_detail-thumbnail">
             <img
-              src={"http://localhost:3000/uploads/" + post.thumbnail}
+              src={
+                "https://blog-app-backend-d194.onrender.com/uploads/" +
+                post.thumbnail
+              }
               alt=""
             />
           </div>

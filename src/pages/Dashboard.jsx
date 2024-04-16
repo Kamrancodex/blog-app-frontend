@@ -22,7 +22,7 @@ function Dashboard() {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/posts/users/${id}`,
+          `https://blog-app-backend-d194.onrender.com/api/posts/users/${id}`,
           {
             withCredentials: true,
             headers: { Authorization: `Bearer ${token}` },
@@ -50,7 +50,7 @@ function Dashboard() {
                 <div className="dashboard_post-info">
                   <div className="dashboard_post-thumbnail">
                     <img
-                      src={`http://localhost:3000/uploads/${posts.thumbnail}`}
+                      src={`https://blog-app-backend-d194.onrender.com/uploads/${posts.thumbnail}`}
                       alt={posts.name}
                     />
                   </div>

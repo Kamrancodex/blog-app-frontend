@@ -16,7 +16,12 @@ function PostItem({
   return (
     <article className="post">
       <div className="post_thumbnail">
-        <img src={"http://localhost:3000/uploads/" + thumbnail} alt={title} />
+        <img
+          src={
+            "https://blog-app-backend-d194.onrender.com/uploads/" + thumbnail
+          }
+          alt={title}
+        />
       </div>
       <div className="post_content">
         <Link to={`/posts/${postId}`}>

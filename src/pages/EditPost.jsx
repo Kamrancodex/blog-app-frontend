@@ -64,7 +64,7 @@ function EditPost() {
     const getPost = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/posts/${id}`
+          `https://blog-app-backend-d194.onrender.com/api/posts/${id}`
         );
         setTitle(response.data.title);
 
@@ -85,7 +85,7 @@ function EditPost() {
 
     try {
       const response = await axios.patch(
-        `http://localhost:3000/api/posts/${id}`,
+        `https://blog-app-backend-d194.onrender.com/api/posts/${id}`,
         postData,
         {
           withCredentials: true,

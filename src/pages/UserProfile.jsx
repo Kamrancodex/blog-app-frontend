@@ -25,7 +25,7 @@ function UserProfile() {
   useEffect(() => {
     const getUser = async () => {
       const response = await axios.get(
-        `http://localhost:3000/api/users/${currentUser.id}`,
+        `https://blog-app-backend-d194.onrender.com/api/users/${currentUser.id}`,
         { withCredentials: true, headers: { Authorization: `Bearer ${token}` } }
       );
       const { name, email, avatar } = response.data;
@@ -41,7 +41,7 @@ function UserProfile() {
       const postData = new FormData();
       postData.set("avatar", avatar);
       const response = await axios.post(
-        `http://localhost:3000/api/users/change-avatar`,
+        `https://blog-app-backend-d194.onrender.com/api/users/change-avatar`,
         postData,
         { withCredentials: true, headers: { Authorization: `Bearer ${token}` } }
       );
@@ -60,7 +60,7 @@ function UserProfile() {
       userData.set("newPassword", newPassword);
       userData.set("newConfirmPassword", newConfirmPassword);
       const response = await axios.patch(
-        "http://localhost:3000/api/users/edit-user",
+        "https://blog-app-backend-d194.onrender.com/api/users/edit-user",
         userData,
         { withCredentials: true, headers: { Authorization: `Bearer ${token}` } }
       );
@@ -82,7 +82,10 @@ function UserProfile() {
         <div className="profile_details">
           <div className="avatar_wrapper">
             <div className="profile_avatar">
-              <img src={`http://localhost:3000/uploads/${avatar}`} alt="" />
+              <img
+                src={`https://blog-app-backend-d194.onrender.com/uploads/${avatar}`}
+                alt=""
+              />
             </div>
             <form className="avatar_form">
               <input

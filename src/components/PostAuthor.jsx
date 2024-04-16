@@ -14,7 +14,7 @@ function PostAuthor({ authorID, createdAt }) {
     const getAuthor = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/users/${authorID}`
+          `https://blog-app-backend-d194.onrender.com/api/users/${authorID}`
         );
 
         setAuthor(response?.data);
@@ -28,7 +28,13 @@ function PostAuthor({ authorID, createdAt }) {
   return (
     <Link to={"/posts/users/" + authorID} className="post_author">
       <div className="post_author-avatar">
-        <img src={"http://localhost:3000/uploads/" + author?.avatar} alt="" />
+        <img
+          src={
+            "https://blog-app-backend-d194.onrender.com/uploads/" +
+            author?.avatar
+          }
+          alt=""
+        />
       </div>
       <div className="post_author-details">
         <h5>By {author?.name}</h5>

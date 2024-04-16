@@ -17,7 +17,7 @@ function DeletePost({ postId: id }) {
     setIsLoading(true);
     try {
       const response = await axios.delete(
-        `http://localhost:3000/api/posts/${id}`,
+        `https://blog-app-backend-d194.onrender.com/api/posts/${id}`,
         { withCredentials: true, headers: { Authorization: `Bearer ${token}` } }
       );
       if (response.status == 200) {

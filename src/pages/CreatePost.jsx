@@ -70,7 +70,7 @@ function CreatePost() {
 
     try {
       const response = await axios.post(
-        `http://localhost:3000/api/posts`,
+        `https://blog-app-backend-d194.onrender.com/api/posts`,
         postData,
         {
           withCredentials: true,

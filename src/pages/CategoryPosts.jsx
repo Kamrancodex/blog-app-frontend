@@ -13,7 +13,8 @@ function CategoryPosts() {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/posts/categories/" + category
+          "https://blog-app-backend-d194.onrender.com/api/posts/categories/" +
+            category
         );
 
         setPosts(response?.data);
